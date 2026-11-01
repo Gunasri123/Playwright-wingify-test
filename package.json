@@ -1,0 +1,19 @@
+{
+  "name": "wingify-login-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:valid": "playwright test tests/login.valid.spec.ts",
+    "test:invalid": "playwright test tests/login.invalid.spec.ts",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install chromium",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3"
+  }
+}
